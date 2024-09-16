@@ -3,13 +3,13 @@ import Nav from "./layouts/nav";
 import Nav2 from "./layouts/nav2";
 import "./App.css";
 import Slider1 from "./components/slider/slider1";
-import Slider2 from "./components/slider/slider2";
+import Slider2 from "./components/slider/Slider2";
 import Map from "./components/map/Map";
 import Footer from "./components/footer/Footer";
 import About from "./layouts/About";
 import Property from "./layouts/Property";
 import Pricing from "./components/pricing/Pricing";
-import Faq from "./components/faq/Faq";
+import Faq from "./components/faq/faq";
 import Contact from "./components/contact-us/ContactUs";
 const App = () => {
   return (
