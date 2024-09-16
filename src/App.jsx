@@ -3,7 +3,7 @@ import Nav from "./layouts/nav";
 import Nav2 from "./layouts/nav2";
 import "./App.css";
 import Slider1 from "./components/slider/slider1";
-import Slider2 from "./components/slider/Slider2";
+import Slider from "./components/slider/Slider";
 import Map from "./components/map/Map";
 import Footer from "./components/footer/Footer";
 import About from "./layouts/About";
@@ -27,7 +27,7 @@ const App = () => {
           <Property />
         </section>
         <section id='gallery'>
-          <Slider2 />
+          <Slider />
         </section>
         <section id='pricing'>
           <Pricing />

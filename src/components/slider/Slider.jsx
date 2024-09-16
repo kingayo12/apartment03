@@ -70,7 +70,7 @@ const allImages = [
   { img: Imgs31, alt: "View 23" },
 ];
 
-const Slider2 = () => {
+const Slider = () => {
   return (
     <div className='gallery_container'>
       <div className='bg_blur'>
@@ -111,4 +111,4 @@ const Slider2 = () => {
   );
 };
 
-export default Slider2;
+export default Slider;
