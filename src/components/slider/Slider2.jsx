@@ -4,7 +4,6 @@ import "swiper/css/navigation";
 import "./slider2.css";
 import { Navigation, Autoplay } from "swiper/modules";
 
-// Import your images
 import Imgs1 from "../../assets/imgs/hero1.jpg";
 import Imgs2 from "../../assets/imgs/hero12.png";
 import Imgs3 from "../../assets/imgs/hero3.jpg";
@@ -37,7 +36,6 @@ import Imgs29 from "../../assets/imgs/21.png";
 import Imgs30 from "../../assets/imgs/22.png";
 import Imgs31 from "../../assets/imgs/23.png";
 
-// Combine the imported images and dynamically loaded additional images
 const allImages = [
   { img: Imgs1, alt: "Rear View" },
   { img: Imgs2, alt: "top View" },
@@ -75,8 +73,6 @@ const allImages = [
 const Slider2 = () => {
   return (
     <div className='gallery_container'>
-      {/* <div className='circlebig1'></div>
-      <div className='circlebig2'></div> */}
       <div className='bg_blur'>
         <section className='title container'>
           <h1>Gallery</h1>
