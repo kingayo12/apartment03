@@ -1,0 +1,245 @@
+.pricing_container {
+  background: url(../../assets/imgs/15.png) #0000008c no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  backface-visibility: hidden;
+  background-attachment: fixed;
+  background-origin: border-box;
+  padding: 20px;
+  /* background-position-y: 100%; */
+}
+
+.pricing_container .pricing_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.pricing_container .pricing_cont .price_header {
+  margin: 20px;
+  position: relative;
+  color: #ffffff;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.pricing_container .pricing_cont .price_header h1 {
+  font-size: clamp(25px, 4vw, 40px);
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+}
+
+.pricing_container .pricing_cont .price_header h1:before {
+  position: absolute;
+  content: "";
+  left: 30px;
+  bottom: -5px;
+  width: 100px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.pricing_container .pricing_cont .price_header h1:after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: -10px;
+  width: 130px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.pricing_container .pricing_cont .price_header p {
+  width: 100%;
+  text-align: left;
+}
+
+.pricing_container .pricing_cont .pac {
+  width: 100%;
+}
+
+.pricing_container .pricing_cont .price_action {
+  width: 280px;
+  height: 40px;
+  padding: 0 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  transition: all 400ms ease;
+  overflow: hidden;
+  backdrop-filter: blur(50px);
+  /* border: 2px solid #fdc600; */
+}
+
+.pricing_container .pricing_cont .price_action button {
+  flex: 1;
+  border-style: none;
+  height: 100%;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+  padding: 0 10px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.pricing_container .pricing_cont .price_action button:hover {
+  background: transparent;
+}
+
+.pricing_container .pricing_cont .price_action button.active {
+  color: #fdc600;
+  border: 2px solid #fdc600;
+
+  transition: all 600ms ease;
+  animation: wellani 600ms ease-in-out;
+}
+
+.pricing_container .pricing_cont .prices {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.pricing_container .pricing_cont .prices .pricing-card {
+  flex: 1;
+  background: #ffffff81;
+  color: #000;
+  height: 380px;
+  min-width: 300px;
+  /* max-width: 350px; */
+  outline: 2px solid #ccc;
+  backdrop-filter: blur(10px);
+  outline-offset: -15px;
+  position: relative;
+}
+
+.pricing_container .pricing_cont .prices ul {
+  justify-content: flex-start;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 10px auto;
+  text-align: left;
+}
+
+.price_features li {
+  list-style: none;
+  /* background: greenyellow; */
+  max-width: 300px;
+  text-align: left;
+  padding-bottom: 5px;
+  width: 26ch;
+}
+
+.pricing-card .wrap {
+  position: relative;
+  transform: skew(10deg);
+  background: linear-gradient(to right, #fdc600, #fdc600);
+  width: 90%;
+  margin: 20px 0;
+  height: 40px;
+  border-radius: 5px;
+  /* filter: drop-shadow(1px 2px 3px #0000008c); */
+  color: #fff;
+}
+
+.pricing-card .wrap h2 {
+  width: 100%;
+  height: 100%;
+  transform: skew(-10deg);
+  background: linear-gradient(to right, #fdc600, #fdc600);
+  z-index: 4;
+  margin-left: 10;
+  border-radius: 5px;
+}
+
+.pricing-card .wrap .long {
+  position: absolute;
+  left: -5px;
+  top: 0;
+  height: 40px;
+  width: 10px;
+  background: linear-gradient(to right, #fdc600, #fdc600);
+  transform: skew(-15deg);
+  z-index: -1;
+}
+
+.pricing-card .price {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.pricing_container .pricing_cont .prices .pricing-card .cta-button {
+  height: 40px;
+  width: 90%;
+  border-style: none;
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  /* filter: drop-shadow(1px 2px 3px #0000008c); */
+  transform: skew(-15deg);
+  background: linear-gradient(to right, #fdc600, rgb(255, 170, 0));
+  cursor: pointer;
+}
+
+.pricing_container .pricing_cont .prices .pricing-card .cta-button h4 {
+  width: 100%;
+  height: 100%;
+  transform: skew(10deg);
+  background: linear-gradient(to right, #fdc600, rgb(255, 170, 0));
+  z-index: 4;
+  margin-left: 10;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.iconp {
+  color: #fdc600;
+  /* filter: drop-shadow(1px 1px 3px #ffffff6b); */
+}
+
+.pricing_container .pricing_cont .prices .pricing-card .cta-button .long {
+  position: absolute;
+  right: -5px;
+  top: 0;
+  height: 40px;
+  width: 10px;
+  background: linear-gradient(to right, #fdc600, rgb(255, 170, 0));
+  transform: skew(5deg);
+  z-index: -1;
+}
+
+.iconpo {
+  margin-right: 20px;
+  animation: move 2s infinite ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    margin-right: 0;
+  }
+  50% {
+    margin-right: 20px;
+  }
+  100% {
+    margin-right: 0;
+  }
+}

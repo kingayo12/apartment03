@@ -1,0 +1,130 @@
+.bg_contact,
+.bg_map {
+  background-attachment: fixed;
+  background-origin: border-box;
+  color: #000;
+  overflow: hidden;
+}
+
+.contact-us {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  text-align: left;
+}
+
+.contact-info,
+.contact-form {
+  margin: 20px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-info h2,
+.contact-form h2,
+.map-section h2,
+.business-hours h2,
+.social-media h2 {
+  margin: 12px 0;
+  font-size: 1.8em;
+  color: #000;
+}
+
+.contact-info p,
+.business-hours p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #414141;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 0;
+  text-indent: 10px;
+  font-size: 1em;
+  background: transparent;
+  border-style: none;
+  outline: none;
+  box-shadow: 2px 3px 4px #00000007;
+  border-bottom: 2px solid #ccc;
+  /* text-rendering: optimizeLegibility; */
+  color: #000;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: 2px solid #fdc600;
+}
+
+.contact-form .btn {
+  background-color: #fdc600;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form .btn:hover {
+  background-color: #fdc600;
+}
+
+.map-section {
+  height: 400px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 15px;
+  color: #fdc600;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #fdc600;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.iconc:hover {
+  color: #fdc600;
+}
+
+.contact-info p:hover {
+  color: #fdc600;
+}
+
+.map h1 {
+  font-size: clamp(25px, 4vw, 40px);
+  font-weight: 400;
+  color: #080808;
+  padding: 20px;
+  text-align: center;
+  text-align: left;
+  max-width: 1280px;
+  margin: auto;
+}
